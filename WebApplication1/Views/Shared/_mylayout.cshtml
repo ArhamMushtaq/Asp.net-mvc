@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @RenderSection("scripts",false)
+</head>
+<body>
+    <a href="/user/logout">Logout</a>
+    <div> 
+        @RenderBody()
+    </div>
+    <div>
+        @RenderSection("footer",false)
+    </div>
+</body>
+</html>

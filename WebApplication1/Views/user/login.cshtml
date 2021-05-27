@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_mylayout.cshtml";
+}
+
+<h2>login</h2>
+<form actions="/User/Login" method="Post">
+    Login: <input type="text" name="textlogin" value="@ViewBag.login" /> <br/>
+    Password: <input type="password" name="textpassword" /> <br/>
+    <input type="submit" value="Login" />
+    <span>@ViewBag.Msg</span>
+</form>
